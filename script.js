@@ -8,14 +8,13 @@ const gambarLoading = document.getElementsByTagName('img')[0];
 
 tombol.addEventListener('click', function () {
 
-    gambarLoading.style.display = "block";
-    gambar.style.display="none";
-    document.body.style.backgroundColor = "white";
-
     if (input.value === "") {
         alert("data anda belum diisi coy");
     } else {
         
+    gambarLoading.style.display = "block";
+    gambar.style.display="none";
+    document.body.style.backgroundColor = "white";
         setTimeout(() => {
             gambarLoading.style.display = "none";
             gambar.style.display="block";
